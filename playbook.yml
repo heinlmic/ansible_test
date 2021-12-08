@@ -1,0 +1,10 @@
+---
+- name: ansible testeing
+  hosts: all
+
+  tasks:
+  - name: first anmsible task
+    ansible.builtin.shell: |
+        uname -r
+        rpm -q python3
+...
